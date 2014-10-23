@@ -28,10 +28,10 @@ Guessing a letter, POST body:char=a
 - Only valid characters are a-z
 - A list of words can be found here. At the start of the game a random word should be picked from this list. 
 
----
-
-## Approach:
+## Approach
 
 First, build model logic, using TDD with PhpSpec and guided by DDD, in order to have a fully decoupled domain logic.
+
 Second, functional tests were used to describe features and the client api context, facilitating an outside-in design of the app architecture (not business logic) guided by Gherkin specs with Behat.
+
 Integration tests will be used to tie both: domain objects interaction and app features to the domain, using PhpUnit+Mockery. 
